@@ -43,7 +43,9 @@ var (
 		"-Wl,--icf=safe",
 	}
 
-	arm64Cppflags = []string{}
+	arm64Cppflags = []string{
+	    "-DARM64_BIT",
+	}
 
 	arm64CpuVariantCflags = map[string][]string{
 		"cortex-a53": []string{

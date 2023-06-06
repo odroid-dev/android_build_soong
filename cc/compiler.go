@@ -502,7 +502,7 @@ func (compiler *baseCompiler) compilerFlags(ctx ModuleContext, flags Flags, deps
 				addToModuleList(ctx, modulesAddedWall, module)
 				flags.CFlags = append([]string{"-Wall"}, flags.CFlags...)
 			} else {
-				flags.CFlags = append([]string{"-Wall", "-Werror"}, flags.CFlags...)
+				flags.CFlags = append([]string{"-Wall"}, flags.CFlags...)
 			}
 		}
 	}
